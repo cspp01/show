@@ -1,0 +1,202 @@
+header.top{
+  color:lightseagreen;
+  background:#090723;
+}
+.nav{
+  height:50px;
+  width:1000px;
+  margin:0 auto;
+}
+.nav>div{
+  float:left;
+}
+div.logo{
+  margin-right:50px;
+}
+div.logo a{
+  display:block;
+  height:50px;
+  line-height:40px;
+  color: #eaeaea;
+  font-size:25px;
+}
+div.logo a::before{
+  content:attr(date-content);
+  color: #c10872;
+}
+div.logo a::after{
+  content:'+';
+  font-size:14px;
+  vertical-align:super;
+  color: #ff4828;
+}
+div.right{
+  float:right;
+}
+div.right a{
+  display:block;
+  height:50px;
+  line-height:50px;
+  color:#fff;
+  font-size:13px;
+}
+header.top .nav li{
+  float:left;
+}
+.nav li a{
+  height:50px;
+  padding:0 20px;
+  color:rgba(255,255,255,.5);
+  line-height:50px;
+  display:block;
+  transition-proterty:all;
+  transition-duration:.3s;
+  font-size:14px;
+}
+.nav li.active a,.nav li a:hover{
+  color:rgba(255,255,255,1);
+}
+header:hover{
+
+}
+.bann{
+  height:200px;
+  background:#090723;
+  position:relative;
+}
+.bann-bg{
+  width:1000px;
+  margin:0 auto;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+.bann-bg div:first-child{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-image:linear-gradient(left,#0a0825,#1e1958);
+  background-image:-ms-linear-gradient(left,#0a0825,#1e1958);
+  background-image:-webkit-linear-gradient(left,#0a0825,#1e1958);
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+.bann-bg div:nth-child(2){
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-image:linear-gradient(100deg,#0a0825,#350f1c);
+  background-image:-ms-linear-gradient(100deg,#0a0825,#350f1c);
+  background-image:-webkit-linear-gradient(100deg,#0a0825,#350f1c);
+  position:absolute;
+  left:300px;
+  top:100px;
+}
+.bann-bg div:nth-last-child(2){
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background-image:linear-gradient(100deg,#0a0825,#350f1c);
+  background-image:-ms-linear-gradient(100deg,#0a0825,#350f1c);
+  background-image:-webkit-linear-gradient(100deg,#0a0825,#350f1c);
+  position:absolute;
+  right:300px;
+  top:10px;
+}
+.bann-bg div:nth-last-child(3){
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.bann-bg div:nth-last-child(3) b{
+  display:block;
+  font-weight:normal;
+  position:absolute;
+}
+.bann-bg div:nth-last-child(3) b:first-child{
+  color:#B32AFF;
+  -webkit-transform:rotate(15deg);
+  -moz-transform:rotate(15deg);
+  -o-transform:rotate(15deg);
+  -ms-transform:rotate(15deg);
+  transform:rotate(15deg);
+  top:70px;
+  left:150px;
+}
+.bann-bg div:nth-last-child(3) b:nth-last-child(2){
+  color:#165d3a;
+  -webkit-transform:rotate(35deg);
+  -moz-transform:rotate(35deg);
+  -o-transform:rotate(35deg);
+  -ms-transform:rotate(35deg);
+  transform:rotate(35deg);
+  top:150px;
+  left:500px;
+}
+.bann-bg div:nth-last-child(3) b:last-child{
+  color:#7a7b2b;
+  -webkit-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
+  top:30px;
+  right:150px;
+}
+.bann-bg div:last-child{
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background-image:linear-gradient(45deg,#0a0825,#102f35);
+  background-image:-ms-linear-gradient(45deg,#0a0825,#102f35);
+  background-image:-webkit-linear-gradient(45deg,#0a0825,#102f35);
+  position:absolute;
+  top:30%;
+  right:0;
+}
+.bann .search{
+  overflow:hidden;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-30px 0 0 -250px;
+  box-shadow:0 0 2px 0px #fff;
+  border-radius:20px;
+}
+.bann input{
+  width:500px;
+  height:40px;
+  padding-left:15px;
+  font-size:15px;
+  background:none;
+  border:none;
+  outline:none;
+  color:#fff;
+  -webkit-transition-property:all;
+  -webkit-transition-duration:.3s;
+  -o-transition-property:all;
+  -o-transition-duration:.3s;
+  -moz-transition-property:all;
+  -moz-transition-duration:.3s;
+  transition-property:all;
+  transition-duration:.3s;
+}
+.bann button{
+  font-size:25px;
+  outline:none;
+  background:none;
+  color: #c6c6c6;
+  position:absolute;
+  border:none;
+  right:10px;
+  line-height:40px;
+  cursor:pointer;
+  font-family:cc;
+  transition-property:all;
+  transition-duration:.3s;
+}
+.bann button:hover{
+  color: #fff;
+  transform:scale(1.2);
+}

@@ -1,0 +1,44 @@
+.object section li {
+    a{
+        background-color: #e3e3e3;
+        padding:10px;
+        border-radius:5px;
+        @include box-shadow( 0, 0, 10px, 0, #ddd );
+        text-align:center;
+        color:#777;
+        position:relative;
+        .label{
+            width:0;
+            height:0;
+            border-width:50px 50px 0;
+            border-style:solid;
+            position:absolute;
+            top:2px;
+            right:-23px;
+            transform: rotate(-135deg);
+        }
+        &::before{
+            content:attr(data-label);
+            position:absolute;
+            top:20px;
+            font-size:14px;
+            right:10px;
+            z-index:10;
+            color:#fff;
+            transform: rotate(45deg);
+        }
+        img{
+            width:305px;
+            /* 设置高度，是的js计算高度时把图片高度计算上 */
+            height:190.828px;
+        }
+        p{
+            padding:10px 0 0;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            width:250px;
+            margin-left:25px;
+            white-space:nowrap;
+        }
+    }
+}
